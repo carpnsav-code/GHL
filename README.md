@@ -35,6 +35,21 @@ cp .env.example .env
 
 ## 4. Register the MCP server with Claude Code
 
+### Claude Code on the web (this repo's environment)
+
+This repo already commits a `.mcp.json` that declares the `ghl` server and
+reads credentials from `GHL_API_TOKEN` / `GHL_LOCATION_ID` env vars (never
+committed). A `.claude/hooks/session-start.sh` hook runs `npm install && npm
+run build` automatically at the start of every session so `dist/index.js`
+is always present.
+
+To finish wiring it up: in this environment's settings (claude.ai/code →
+this environment → Environment Variables), add `GHL_API_TOKEN` and
+`GHL_LOCATION_ID` as secrets. The next session started against this repo
+will pick up the MCP server automatically — no further action needed.
+
+### Local Claude Code CLI
+
 ```bash
 claude mcp add ghl \
   --env GHL_API_TOKEN=your_private_integration_token \

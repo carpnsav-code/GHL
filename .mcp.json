@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ghl": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "GHL_API_TOKEN": "${GHL_API_TOKEN}",
+        "GHL_LOCATION_ID": "${GHL_LOCATION_ID}"
+      }
+    }
+  }
+}
