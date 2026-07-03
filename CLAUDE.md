@@ -59,6 +59,9 @@ until that customer has explicitly said yes to a specific time.**
   price.** So 1000 sq ft at $7/sq ft = $7,000.
 - Each template carries its own saved **terms & conditions** (`termsNotes`); the
   tool always includes them — never send an estimate without the template's T&C.
+- The template's stored logo is a private GHL URL that won't render on the public
+  estimate page, so the tool overrides it with the public logo
+  (`mint-concrete-logo`; set `GHL_ESTIMATE_LOGO_URL` to change it).
 - Dan sets the price. Confirm the numbers with him before sending unless he's
   clearly told you to send it.
 

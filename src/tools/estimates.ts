@@ -5,6 +5,13 @@ import { jsonResult, errorResult } from "../util.js";
 
 const TZ = "America/Phoenix";
 
+// Templates store the logo as a private GHL URL that the public estimate page
+// (fastpaydirect.com) can't load, so it renders as a broken image. Override it
+// with a publicly reachable logo URL. Configurable via env for portability.
+const LOGO_URL =
+  process.env.GHL_ESTIMATE_LOGO_URL ||
+  "https://mintconcretepolishing.com/wp-content/uploads/2026/05/mint-concrete-logo-800x800.png";
+
 function ymd(d: Date): string {
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: TZ,
@@ -129,7 +136,7 @@ export function registerEstimateTools(server: McpServer, client: GHLClient) {
         altType: "location",
         name: tpl.name ?? "Estimate",
         currency,
-        businessDetails: tpl.businessDetails ?? {},
+        businessDetails: { ...(tpl.businessDetails ?? {}), logoUrl: LOGO_URL },
         items: [
           {
             name: item.name,
