@@ -10,7 +10,7 @@ const TZ = "America/Phoenix";
 // with a publicly reachable logo URL. Configurable via env for portability.
 const LOGO_URL =
   process.env.GHL_ESTIMATE_LOGO_URL ||
-  "https://mintconcretepolishing.com/wp-content/uploads/2026/05/mint-concrete-logo.png";
+  "https://assets.cdn.filesafe.space/Xj7u5i7fbL5xWezHHamo/media/9ea43bee-b840-42b7-a135-918a438ba56d.png";
 
 function ymd(d: Date): string {
   return new Intl.DateTimeFormat("en-CA", {
