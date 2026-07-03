@@ -44,9 +44,11 @@ until that customer has explicitly said yes to a specific time.**
   says so.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
-- Quote calendar availability is **weekdays only, 8am–4pm** (America/Phoenix).
-  Don't offer or try to book weekend/after-hours slots — the booking will fail.
-  Check free slots before promising a specific time when the day's in question.
+- Quote calendar availability is **weekdays only** (America/Phoenix). Don't offer
+  or try to book weekend/after-hours slots — the booking will fail. Check free
+  slots before promising a specific time when the day's in question.
+- **Afternoons only — never book mornings.** Dan takes appointments in the
+  afternoon (12pm–4pm); don't propose or book any morning slot.
 - If they decline / say they're all set: one short thank-you, move to **Dead**.
 
 ## Handling declines & price objections (don't sell)
