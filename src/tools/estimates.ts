@@ -10,7 +10,7 @@ const TZ = "America/Phoenix";
 // with a publicly reachable logo URL. Configurable via env for portability.
 const LOGO_URL =
   process.env.GHL_ESTIMATE_LOGO_URL ||
-  "https://assets.cdn.filesafe.space/Xj7u5i7fbL5xWezHHamo/media/9ea43bee-b840-42b7-a135-918a438ba56d.png";
+  "https://assets.cdn.filesafe.space/Xj7u5i7fbL5xWezHHamo/media/f5e6f073-75bd-4adc-bd02-5487dd3b5d2d.png";
 
 function ymd(d: Date): string {
   return new Intl.DateTimeFormat("en-CA", {
