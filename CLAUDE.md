@@ -46,6 +46,17 @@ until that customer has explicitly said yes to a specific time.**
   Check free slots before promising a specific time when the day's in question.
 - If they decline / say they're all set: one short thank-you, move to **Dead**.
 
+## Handling declines & price objections (don't sell)
+
+- When someone declines or says the price is too high, **do not push back or try
+  to sell**. Accept it and move on.
+- Keep the response **very short**. Acknowledge, no pitch.
+- The message: no worries, we're always here if they ever want to revisit — but
+  it's a lot of work to do right, and anybody doing it for much less is taking a
+  big risk. Leave it there.
+- Then move the opportunity to **Dead**. Accept and move on (until further
+  notice).
+
 ## Estimates / quotes (sent through GHL)
 
 - Estimates go out through **GHL's native Estimates**, built from the saved
