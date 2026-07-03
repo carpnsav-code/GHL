@@ -46,6 +46,22 @@ until that customer has explicitly said yes to a specific time.**
   Check free slots before promising a specific time when the day's in question.
 - If they decline / say they're all set: one short thank-you, move to **Dead**.
 
+## Estimates / quotes (sent through GHL)
+
+- Estimates go out through **GHL's native Estimates**, built from the saved
+  templates (200/400/800 Grit Polished, Grind & Seal, Stained Concrete, Single
+  Color Epoxy, Marble Metallic, Polyaspartic Flake). No Jobber needed for this.
+- Tool: `ghl_send_estimate` — pass the template name, the contact, the square
+  footage, and the price per square foot.
+- Send **every quote by email AND text** (`sendVia: "sms_and_email"`, the
+  default) unless Dan says otherwise.
+- Mapping (hard rule): **square footage = quantity, price per sq ft = per-unit
+  price.** So 1000 sq ft at $7/sq ft = $7,000.
+- Each template carries its own saved **terms & conditions** (`termsNotes`); the
+  tool always includes them — never send an estimate without the template's T&C.
+- Dan sets the price. Confirm the numbers with him before sending unless he's
+  clearly told you to send it.
+
 ## General
 
 - Timezone for all scheduling and "today" calculations: **America/Phoenix**.
