@@ -54,8 +54,9 @@ until that customer has explicitly said yes to a specific time.**
 - Quote calendar availability is **weekdays only** (America/Phoenix). Don't offer
   or try to book weekend/after-hours slots — the booking will fail. Check free
   slots before promising a specific time when the day's in question.
-- **Afternoons only — never book mornings.** Dan takes appointments in the
-  afternoon (12pm–4pm); don't propose or book any morning slot.
+- **Mornings preferred.** Dan prefers morning times for quote appointments —
+  propose a morning slot first. Only fall back to an afternoon if the customer
+  can't do mornings.
 - Book on the **APolished Concrete Quote Calendar** (`OxMnzcf1JnHz2LG138Fg`) and
   **assign every appointment to Dan** (`6pvVVC5ph1zf9m5Z7IKj`). It's a round-robin
   calendar, so without an explicit assignee it lands on the wrong user and won't
