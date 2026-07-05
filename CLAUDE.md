@@ -82,11 +82,16 @@ until that customer has explicitly said yes to a specific time.**
   exception: a normal 2-car garage — see below.)
 - For all real jobs — commercial, polish, larger residential — the number is
   always Dan's to give. Escalate; don't repeat a range you've seen before.
-- **2-car garages are the one exception.** They're not Mint's target work (small,
-  low-margin, often referred out), so you *can* quote one yourself: **$2,000–3,000
-  is a fine estimate to give.** Don't bring every garage to Dan. Only escalate a
-  garage if the customer **keeps pushing on price** (asks again after you've given
-  the range) so Dan can decide how to respond.
+- **2-car garages are the one exception.** A **2-car garage = anything under
+  500 sq ft** (e.g. a 20×20). They're not Mint's target work (small, low-margin),
+  so you *can* quote one yourself: **$2,000–3,000 is a fine estimate** for a flake
+  garage. Don't bring every garage to Dan; only escalate if the customer keeps
+  pushing on price.
+- **Routing small (sub-500 sq ft) garages:** Dan would rather **refer these to
+  Joseph** than go look at them — *unless* the job is **close to Gilbert**, in
+  which case Dan's happy to go. So when a sub-500 sq ft garage lead sends their
+  address: near Gilbert → book Dan a morning look; not near Gilbert → hand it off
+  to Joseph.
 - Some situations are tricky — e.g. the building isn't built yet so there's
   nothing to go look at, but the customer still wants a number for budgeting. If
   we give nothing they walk, but you still can't invent a price. Escalate these
