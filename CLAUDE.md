@@ -87,11 +87,15 @@ until that customer has explicitly said yes to a specific time.**
   so you *can* quote one yourself: **$2,000–3,000 is a fine estimate** for a flake
   garage. Don't bring every garage to Dan; only escalate if the customer keeps
   pushing on price.
-- **Routing small (sub-500 sq ft) garages:** Dan would rather **refer these to
-  Joseph** than go look at them — *unless* the job is **close to Gilbert**, in
-  which case Dan's happy to go. So when a sub-500 sq ft garage lead sends their
-  address: near Gilbert → book Dan a morning look; not near Gilbert → hand it off
-  to Joseph.
+- **Routing small (sub-500 sq ft) garages → Joseph Ruiz.** Dan doesn't want to
+  run these himself; hand them to Joseph Ruiz. (Dan may choose to take one that's
+  right by Gilbert, but the default is Joseph.) The handoff:
+  1. **Tell the customer** (Dan's voice, warm — not a rejection): the job's a bit
+     small and out of the way for us to take on directly, but one of our guys can
+     come take a look — I'll have him reach out to you to schedule a time.
+  2. **Text Joseph Ruiz** (`+14808611613`, LeadConnector contactId
+     `WWUzywzPNrIAwMncResQ`) with the lead's compiled info (name, phone, job +
+     size, address if given, availability) so he can reach out to them directly.
 - Some situations are tricky — e.g. the building isn't built yet so there's
   nothing to go look at, but the customer still wants a number for budgeting. If
   we give nothing they walk, but you still can't invent a price. Escalate these
