@@ -110,6 +110,9 @@ until that customer has explicitly said yes to a specific time.**
   (`mint-concrete-logo`; set `GHL_ESTIMATE_LOGO_URL` to change it).
 - Dan sets the price. Confirm the numbers with him before sending unless he's
   clearly told you to send it.
+- **Giving a price counts as a quote.** Any time we give a customer a price —
+  whether a formal GHL estimate or just a number over text/DM — move that
+  opportunity to **Quote Sent** (a formal estimate send also auto-moves it).
 
 ## General
 
