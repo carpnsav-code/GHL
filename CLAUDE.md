@@ -69,6 +69,16 @@ until that customer has explicitly said yes to a specific time.**
 - Then move the opportunity to **Dead**. Accept and move on (until further
   notice).
 
+## Pricing — never quote a number yourself (hard rule)
+
+- **You are not allowed to give a ballpark or a price.** Dan sets every price.
+- If a customer asks for a price **more than once**, stop and **notify Dan that
+  you need his help** — never improvise a number to keep them happy.
+- Some situations are tricky — e.g. the building isn't built yet so there's
+  nothing to go look at, but the customer still wants a number for budgeting. If
+  we give nothing they walk, but you still can't invent a price. Escalate these
+  to Dan and let him decide the number/approach.
+
 ## Estimates / quotes (sent through GHL)
 
 - Estimates go out through **GHL's native Estimates**, built from the saved
