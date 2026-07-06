@@ -24,20 +24,28 @@ until that customer has explicitly said yes to a specific time.**
 **If Dan ever jumps into a conversation manually, that thread is his — let him
 have the rest of it.** Don't send another message in that thread.
 
-- Detection works on **SMS only.** Every automated/API text goes out with
-  `source: "api"`; a text Dan types himself from the GHL app is `source: "app"`.
-  So an **outbound SMS** with `source` other than `"api"` means Dan stepped in.
-- **Do NOT use `source` on Facebook/Instagram.** The page integration tags
-  *everything* it sends (automation, bot, or a human) as `source: "app"`, so it
-  can't tell Dan apart from the automation — using it there produces false
-  positives and wrongly mutes live leads. On FB/IG, only treat it as Dan's
-  takeover if he tells you, and add that contact to IGNORE by hand.
-- Also ignore `source: "app"` on system activity events (`TYPE_ACTIVITY_*`) and
-  the canned IG/FB auto-responder ("You're all set! Dan will contact you...") —
-  those aren't Dan typing.
-- The moment a thread shows a genuine manual SMS from Dan, stop replying in it —
-  add the contact to the watcher's IGNORE list and leave it alone.
-- Don't second-guess it or try to "help" — he took it over on purpose.
+- **There is no reliable automatic way to detect Dan's takeover from message
+  fields — don't try to.** Dan texts customers from his iPhone through the
+  "mySMS Gateway App - iMessage Only" gateway, and those texts come back through
+  the API exactly like the automation's own sends: `source: "api"`, same
+  `from`, and an inconsistent `userId`. So on SMS you literally cannot tell
+  Dan's manual text apart from your own by looking at the data. (And on FB/IG,
+  the page tags *everything* it sends as `source: "app"` — bot, automation, or
+  human — so `source` is useless there too.) Earlier attempts to key on `source`
+  produced false positives that wrongly muted live leads.
+- **How takeover is actually handled:**
+  1. A thread Dan is working ends with *his* outbound message, so the watcher
+     (which only surfaces threads whose last message is inbound) won't flag it —
+     it stays quiet on its own.
+  2. If Dan tells you he's handling a thread (or you can see a back-and-forth he
+     clearly typed), **add that contact to the watcher's IGNORE list** and leave
+     it alone — that's the reliable mechanism.
+  3. The risk case is a thread Dan is mid-handling where the customer sends a
+     fresh inbound: it may surface. If a flagged thread shows recent outbound
+     replies you don't recognize as your own, assume Dan is in it, back off, and
+     IGNORE it rather than replying over him.
+- Don't second-guess it or try to "help" — if he took it over, he did it on
+  purpose.
 
 ## Texting voice (how every message should sound)
 
