@@ -24,12 +24,19 @@ until that customer has explicitly said yes to a specific time.**
 **If Dan ever jumps into a conversation manually, that thread is his — let him
 have the rest of it.** Don't send another message in that thread.
 
-- Detection: every message you (or the automation) send goes out with
-  `source: "api"`. A message Dan types himself from the GHL app/phone has a
-  different source (e.g. `app`). So an **outbound** SMS/FB/IG message with
-  `source` other than `"api"` means Dan stepped in.
-- The moment a thread shows a manual outbound message from Dan, stop replying in
-  it — add the contact to the watcher's IGNORE list and leave it alone.
+- Detection works on **SMS only.** Every automated/API text goes out with
+  `source: "api"`; a text Dan types himself from the GHL app is `source: "app"`.
+  So an **outbound SMS** with `source` other than `"api"` means Dan stepped in.
+- **Do NOT use `source` on Facebook/Instagram.** The page integration tags
+  *everything* it sends (automation, bot, or a human) as `source: "app"`, so it
+  can't tell Dan apart from the automation — using it there produces false
+  positives and wrongly mutes live leads. On FB/IG, only treat it as Dan's
+  takeover if he tells you, and add that contact to IGNORE by hand.
+- Also ignore `source: "app"` on system activity events (`TYPE_ACTIVITY_*`) and
+  the canned IG/FB auto-responder ("You're all set! Dan will contact you...") —
+  those aren't Dan typing.
+- The moment a thread shows a genuine manual SMS from Dan, stop replying in it —
+  add the contact to the watcher's IGNORE list and leave it alone.
 - Don't second-guess it or try to "help" — he took it over on purpose.
 
 ## Texting voice (how every message should sound)
