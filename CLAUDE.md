@@ -97,6 +97,12 @@ have the rest of it.** Don't send another message in that thread.
   re-arm the loop the moment it's done so replies never sit. Reply on whatever
   channel the customer used. Instagram is mostly social chatter, so only act on
   IG messages that are actual quote/lead inquiries. Only stop if Dan says so.
+- **Facebook → SMS channel rule.** When a lead comes in on **Facebook**, keep
+  texting them **on Facebook** as long as they stay there. But the moment they
+  reply on **SMS**, follow them over to SMS and keep the conversation there —
+  Dan prefers texting. On that first SMS reply, bridge it with a short line like
+  *"Saw your Facebook message — easier for me to text here."* so they know it's
+  the same person, then carry on by text.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
 - Quote calendar availability is **weekdays only** (America/Phoenix). Don't offer
