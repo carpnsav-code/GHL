@@ -175,6 +175,13 @@ have the rest of it.** Don't send another message in that thread.
   whether a formal GHL estimate or just a number over text/DM — move that
   opportunity to **Quote Sent** (a formal estimate send also auto-moves it).
 
+## Invoices (sent through GHL)
+
+- Built from the saved **invoice templates** (same systems as estimates) and sent
+  by text + email like quotes.
+- **Invoices are due the same day they're sent (hard rule).** Set `dueDate` equal
+  to the `issueDate` (today, America/Phoenix) — never a future/net-30 due date.
+
 ## General
 
 - Timezone for all scheduling and "today" calculations: **America/Phoenix**.
