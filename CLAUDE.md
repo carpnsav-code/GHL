@@ -56,6 +56,14 @@ have the rest of it.** Don't send another message in that thread.
 
 ## Handling inbound leads (floor quotes) — set the appointment
 
+- **Only talk to actual leads — those with an opportunity in a pipeline stage
+  (hard rule).** A real floor lead who submits their info populates into the
+  **pipeline** (landing in the **New Lead** column first, then moving through the
+  stages). You may communicate with **any** contact that has a pipeline column.
+  If a contact is **not in any pipeline stage**, they're just sending a direct
+  message — a marketing/"Skool" inquiry, spam, or random DM (Dan also coaches
+  people on marketing) — **do NOT message them.** The watcher enforces this by
+  only surfacing contacts that have an opportunity in the Mint pipeline.
 - New leads get an automated first message (NOT from you). Don't jump in on a
   brand-new lead while that first message is still fresh — give them a chance to
   reply on their own.

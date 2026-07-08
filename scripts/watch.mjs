@@ -20,6 +20,23 @@ async function ghl(q){const u=new URL(BASE_URL+"/conversations/search");for(cons
 const r=await fetchJSON(u);if(!r.ok)throw new Error(r.status+" "+r.text);return r.data;}
 async function msgs(conversationId){const u=new URL(BASE_URL+`/conversations/${conversationId}/messages`);u.searchParams.set("limit","20");
 let r;try{r=await fetchJSON(u);}catch{return[];}if(!r.ok)return[];return r.data?.messages?.messages||r.data?.messages||[];}
+// Dan's rule: only engage contacts that are actual leads — i.e. they have an opportunity
+// in a *pipeline stage* (any column). A new lead lands in the New Lead column first, then
+// moves through the pipeline. Someone with NO pipeline presence is just sending a direct
+// message (marketing/Skool inquiry, spam, random DM) — never message them.
+const PIPE="5qKdJCOxNf6p2MUEaHpI";
+async function pipelineContactIds(){
+  const ids=new Set(); let page=1;
+  while(true){
+    const u=new URL(BASE_URL+"/opportunities/search");
+    for(const[k,v]of Object.entries({location_id:locationId,pipeline_id:PIPE,limit:100,page}))u.searchParams.set(k,String(v));
+    let r;try{r=await fetchJSON(u);}catch{break;}
+    const b=r.data?.opportunities||[];
+    for(const o of b) ids.add(o.contact?.id||o.contactId);
+    if(b.length<100) break; page++; if(page>25) break;
+  }
+  return ids;
+}
 
 // NOTE: There is no reliable way to auto-detect Dan's manual takeover from message
 // fields — his iPhone texts come through the iMessage gateway as source=api, identical
@@ -32,14 +49,18 @@ const IGNORE=new Set([
   "FShRw3H8QJa8xfUUVdz4","e7S3tuZbVNSCaRiZJEF4","M8dXcYIEycUSjrJE3mvl","o2J6JnK1axJnUf6ws8gi",
   "mZAluZPnObXCVhelP15R","INqZxET6q5ehZEx4nwSf","xARXtQia3L7M0k9cZG4G","w7Bnua5UJLmCAnPB85Ws",
   "Y6zd4SpfrR2ACYz4eqat","QUK8VpMnBcbRACOgBdC4","CI5UOY9Joe6mXdgzyErq","2aIpX2zywA2Prua6qPk7",
-  "Jrub4h7IcihhCZlfKgOb","W0IqFUQ0S1styZEhLRNJ",
+  "Jrub4h7IcihhCZlfKgOb","W0IqFUQ0S1styZEhLRNJ","1MEL1qK3SpLspCzZdoaD",
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
-const data=await ghl({locationId,sortBy:"last_message_date",sort:"desc",limit:40});
+const [data, pipelineContacts] = await Promise.all([
+  ghl({locationId,sortBy:"last_message_date",sort:"desc",limit:40}),
+  pipelineContactIds(),
+]);
 const fmt=(ms)=>new Intl.DateTimeFormat("en-US",{timeZone:"America/Phoenix",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",hour12:true}).format(new Date(ms));
 const needs=[], cold=[];
 for(const c of data.conversations||[]){
   if(IGNORE.has(c.contactId)) continue;                          // intentionally left
+  if(!pipelineContacts.has(c.contactId)) continue;               // only leads that have a pipeline column (not plain DMs)
   if(!CHANNELS.has(c.lastMessageType)) continue;                 // SMS / FB / IG only
   const body=(c.lastMessageBody||"").trim();
 
