@@ -120,9 +120,12 @@ have the rest of it.** Don't send another message in that thread.
   propose a morning slot first. Only fall back to an afternoon if the customer
   can't do mornings.
 - Book on the **APolished Concrete Quote Calendar** (`OxMnzcf1JnHz2LG138Fg`) and
-  **assign every appointment to Dan** (`6pvVVC5ph1zf9m5Z7IKj`). It's a round-robin
-  calendar, so without an explicit assignee it lands on the wrong user and won't
-  show on Dan's calendar.
+  **assign every appointment to Danny Carpenter** (`6pvVVC5ph1zf9m5Z7IKj`) — on
+  **every create AND every reschedule/update**. It's a round-robin calendar, so
+  any create or time change **without an explicit `assignedUserId`** re-rolls the
+  assignment to the wrong user and the appointment vanishes from Dan's calendar.
+  So a reschedule (`PUT`) must always re-send `assignedUserId: 6pvVVC5ph1zf9m5Z7IKj`
+  alongside the new time — never change the time without it.
 - If they decline / say they're all set: one short thank-you, move to **Dead**.
 
 ## Handling declines & price objections (don't sell)
