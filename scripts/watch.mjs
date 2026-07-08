@@ -77,8 +77,10 @@ for(const c of data.conversations||[]){
 
   if(c.lastMessageDirection!=="inbound") continue;               // I already replied
   if(/^Liked /i.test(body)||/^(Loved|Laughed at|Emphasized|Disliked|Reacted|Questioned) /i.test(body)) continue; // reactions
+  if(!/[a-z0-9]/i.test(body)) continue;                          // emoji/punctuation-only (e.g. "😂") — not an inquiry
+  if(/filled out your form|would like to know more about your business/i.test(body)) continue; // raw form-fill — the auto-intro handles first contact; wait for their real reply
   if(c.lastMessageType==="TYPE_INSTAGRAM"){                      // IG is mostly chatter — only real leads
-    const leadish=/\d|quote|floor|epoxy|polish|concrete|garage|shop|sq\s?ft|square|coat|stain|grind|seal|price|estimate|address|filled out your form/i.test(body);
+    const leadish=/\d|quote|floor|epoxy|polish|concrete|garage|shop|sq\s?ft|square|coat|stain|grind|seal|price|estimate|address/i.test(body);
     if(!leadish) continue;
   }
   needs.push({name:c.fullName,phone:c.phone,contactId:c.contactId,conversationId:c.id,channel:CHAN_LABEL[c.lastMessageType],when:fmt(c.lastMessageDate),body:body.replace(/\s+/g," ").slice(0,140)});
