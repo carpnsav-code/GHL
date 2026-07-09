@@ -57,6 +57,7 @@ const IGNORE=new Set([
   "Jrub4h7IcihhCZlfKgOb","W0IqFUQ0S1styZEhLRNJ","1MEL1qK3SpLspCzZdoaD","coCI0Mvst3u4m06jmeqS",
   "Bha9zjNFI7iBcXSNKuzd", // Brad Greathouse — marketing/ads client, not a floor lead
   "BvxT3Hw5LLL3LN8D7Kul", // ItzZues — Skool marketing-course student, not a floor lead
+  "sKPxsMcQHCPyjx9ALqDW", // Adrian Dolghier — Dan took over the thread manually (7/9)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
