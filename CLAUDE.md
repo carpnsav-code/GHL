@@ -119,9 +119,12 @@ have the rest of it.** Don't send another message in that thread.
   the same person, then carry on by text.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
-- Quote calendar availability is **weekdays only** (America/Phoenix). Don't offer
-  or try to book weekend/after-hours slots — the booking will fail. Check free
-  slots before promising a specific time when the day's in question.
+- Quote calendar hours are **Monday–Saturday, 9 AM–2 PM** (America/Phoenix),
+  hourly slots. Don't offer or try to book outside those hours — the booking will
+  fail. Check free slots before promising a specific time when the day's in
+  question. **Sunday is closed.** (Note: Saturday is set in the calendar hours but
+  won't produce bookable slots until Dan's personal user availability includes
+  Saturday — that toggle lives in the GHL UI, not the API.)
 - **Mornings preferred.** Dan prefers morning times for quote appointments —
   propose a morning slot first. Only fall back to an afternoon if the customer
   can't do mornings.
