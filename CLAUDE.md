@@ -103,8 +103,8 @@ have the rest of it.** Don't send another message in that thread.
 - Respond promptly while actively monitoring the thread.
 - **Follow through on promised follow-ups.** If you told a lead you'd check the
   calendar and get back to them with a time, do it — if they go quiet, don't
-  leave it hanging; proactively send them a specific afternoon weekday slot and
-  drive to book.
+  leave it hanging; proactively send them a specific morning (before-2) weekday
+  slot and drive to book.
 - **Lead monitoring runs 24/7 — never turn it off.** Watch all lead channels —
   **SMS, Facebook, and Instagram** — continuously around the clock (nights,
   weekends, holidays), re-arming every cycle. If you get pulled onto another task,
@@ -125,6 +125,11 @@ have the rest of it.** Don't send another message in that thread.
 - **Mornings preferred.** Dan prefers morning times for quote appointments —
   propose a morning slot first. Only fall back to an afternoon if the customer
   can't do mornings.
+- **Book before 2:00 PM (hard preference).** Quote appointments should land
+  **before two o'clock** — propose morning/early-afternoon slots and don't book
+  at or after 2 PM. Only go past 2 if the customer genuinely can't do earlier or
+  Dan explicitly okays it. (Applies to reschedules too — keep the new time before
+  2.)
 - Book on the **APolished Concrete Quote Calendar** (`OxMnzcf1JnHz2LG138Fg`) and
   **assign every appointment to Danny Carpenter** (`6pvVVC5ph1zf9m5Z7IKj`) — on
   **every create AND every reschedule/update**. It's a round-robin calendar, so
