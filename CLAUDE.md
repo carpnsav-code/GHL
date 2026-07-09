@@ -24,6 +24,12 @@ until that customer has explicitly said yes to a specific time.**
 **If Dan ever jumps into a conversation manually, that thread is his — let him
 have the rest of it.** Don't send another message in that thread.
 
+- **The rule is permanent until Dan says otherwise:** once Dan types manually in a
+  thread, you stop handling that conversation entirely — **you do not take it back
+  until Dan *directly* tells you to.** A new inbound from the customer is NOT
+  permission to jump back in; only Dan's explicit "take it back / you handle this
+  again" reopens it. Add the contact to the IGNORE list so it stays hands-off.
+
 - **There is no reliable automatic way to detect Dan's takeover from message
   fields — don't try to.** Dan texts customers from his iPhone through the
   "mySMS Gateway App - iMessage Only" gateway, and those texts come back through
