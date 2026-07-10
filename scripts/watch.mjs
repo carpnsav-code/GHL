@@ -60,6 +60,7 @@ const IGNORE=new Set([
   "sKPxsMcQHCPyjx9ALqDW", // Adrian Dolghier — Dan took over the thread manually (7/9)
   "V66738DUJeA6bDynNHLx", // Epoxy It / Jesse Hodges — industry peer, Dan handling personally (7/9)
   "QPtsvk9wySmAW7SObWiF", // Kevin Shyn — moved to Dead (7/10)
+  "RQz3P1DnNnj0Op2e8IWq", // Gina Ribaudo — moved to Dead (7/10)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
