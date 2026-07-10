@@ -54,7 +54,7 @@ const IGNORE=new Set([
   "FShRw3H8QJa8xfUUVdz4","e7S3tuZbVNSCaRiZJEF4","M8dXcYIEycUSjrJE3mvl","o2J6JnK1axJnUf6ws8gi",
   "mZAluZPnObXCVhelP15R","INqZxET6q5ehZEx4nwSf","xARXtQia3L7M0k9cZG4G","w7Bnua5UJLmCAnPB85Ws",
   "Y6zd4SpfrR2ACYz4eqat","QUK8VpMnBcbRACOgBdC4","CI5UOY9Joe6mXdgzyErq","2aIpX2zywA2Prua6qPk7",
-  "Jrub4h7IcihhCZlfKgOb","1MEL1qK3SpLspCzZdoaD","coCI0Mvst3u4m06jmeqS",
+  "Jrub4h7IcihhCZlfKgOb","W0IqFUQ0S1styZEhLRNJ","1MEL1qK3SpLspCzZdoaD","coCI0Mvst3u4m06jmeqS",
   "Bha9zjNFI7iBcXSNKuzd", // Brad Greathouse — marketing/ads client, not a floor lead
   "BvxT3Hw5LLL3LN8D7Kul", // ItzZues — Skool marketing-course student, not a floor lead
   "sKPxsMcQHCPyjx9ALqDW", // Adrian Dolghier — Dan took over the thread manually (7/9)
