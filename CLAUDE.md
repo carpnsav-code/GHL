@@ -151,6 +151,10 @@ have the rest of it.** Don't send another message in that thread.
   message when **Dan explicitly tells you to in that moment** (e.g. he says "text
   them I'm outside"). Never schedule/automate one, and never infer he's en route
   from the fact that an appointment exists.
+- **Never book same-day (hard rule).** Do NOT book an appointment for the same day
+  the lead comes in — always schedule it for the **next day or later**. Propose the
+  soonest before-2 morning slot starting tomorrow, never today. (Only Dan may
+  override this for a specific job if he explicitly says so.)
 - **Don't commit Dan to a same-day on-site appointment on your own.** A booking is
   not proof Dan will physically be there. Don't assume that because Dan is "in the
   area" (near another appointment) he'll take a new job the same day. For **same-day**
