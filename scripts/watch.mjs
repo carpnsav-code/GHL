@@ -59,6 +59,7 @@ const IGNORE=new Set([
   "BvxT3Hw5LLL3LN8D7Kul", // ItzZues — Skool marketing-course student, not a floor lead
   "sKPxsMcQHCPyjx9ALqDW", // Adrian Dolghier — Dan took over the thread manually (7/9)
   "V66738DUJeA6bDynNHLx", // Epoxy It / Jesse Hodges — industry peer, Dan handling personally (7/9)
+  "QPtsvk9wySmAW7SObWiF", // Kevin Shyn — moved to Dead (7/10)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
