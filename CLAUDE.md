@@ -212,6 +212,18 @@ have the rest of it.** Don't send another message in that thread.
   we give nothing they walk, but you still can't invent a price. Escalate these
   to Dan and let him decide the number/approach.
 
+## Nurturing Quote Sent leads (tailor + drip)
+
+- When following up with leads in the **Quote Sent** column, **tailor each message
+  to that lead's actual job/quote** — reference what they're getting done (their
+  space, the specific estimate) — never a generic copy-paste blast to everyone.
+- **Drip them, don't blast.** Space the touches out over days and stagger them
+  across leads, so nobody gets hammered and it doesn't read as an automated blast.
+  A light, personal check-in every few days until they respond or clearly go cold,
+  then let it rest.
+- Still Dan's voice: short, Texan, no pressure. Don't re-quote or commit to a
+  system — just nudge and answer questions.
+
 ## Estimates / quotes (sent through GHL)
 
 - Estimates go out through **GHL's native Estimates**, built from the saved
