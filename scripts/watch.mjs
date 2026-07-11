@@ -63,6 +63,7 @@ const IGNORE=new Set([
   "RQz3P1DnNnj0Op2e8IWq", // Gina Ribaudo — moved to Dead (7/10)
   "vxzl4ScSEBotBjWiLrkJ", // Douglas McCowan — Dan handling; not a job we're taking (7/10)
   "caBT0rA2rfDInQ4v4s42", // Abel — declined (went w/ Superior Garage Floors), Dead (7/11)
+  "hSgmDOCszXXjExJrCOyD", // Sheila Lewis — too far (Florence), cancelled + Dead (7/11)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
