@@ -67,6 +67,7 @@ const IGNORE=new Set([
   "Zk5bpDVxbgqRgbyrL3o4", // Esteban Ortiz — 2-car garage, routed to Joseph, Dead (7/12)
   "fKKPsWAQtt4mKZHabzj8", // Jesus Aguirre — 2-car garage, routed to Joseph, Dead (7/12)
   "MPSeg3QNU0ceUIHEmFrJ", // Michael Myers — booked Tue 7/14 11am (garage floor quote)
+  "gLu7fpwPCCRhLuakwiOj", // Dr. Jess Flores — booked Tue 7/14 9am (Casa Grande, 4-car garage)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
