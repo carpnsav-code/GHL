@@ -172,6 +172,12 @@ have the rest of it.** Don't send another message in that thread.
   assignment to the wrong user and the appointment vanishes from Dan's calendar.
   So a reschedule (`PUT`) must always re-send `assignedUserId: 6pvVVC5ph1zf9m5Z7IKj`
   alongside the new time — never change the time without it.
+- **Always set the job address on the appointment.** Dan needs the address on the
+  calendar event to know where he's driving. Include the customer's address when
+  you create the appointment. (The `ghl_create_appointment` MCP tool doesn't take
+  an address field, so after creating, `PUT /calendars/events/appointments/{id}`
+  with `{address, assignedUserId: 6pvVVC5ph1zf9m5Z7IKj}` to set it — re-send Dan's
+  ID so the round-robin doesn't re-roll.)
 - If they decline / say they're all set: one short thank-you, move to **Dead**.
 
 ## Never fake Dan's whereabouts or commit him same-day (hard rule)
