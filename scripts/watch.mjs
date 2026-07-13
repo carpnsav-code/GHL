@@ -64,6 +64,8 @@ const IGNORE=new Set([
   "vxzl4ScSEBotBjWiLrkJ", // Douglas McCowan — Dan handling; not a job we're taking (7/10)
   "caBT0rA2rfDInQ4v4s42", // Abel — declined (went w/ Superior Garage Floors), Dead (7/11)
   "hSgmDOCszXXjExJrCOyD", // Sheila Lewis — too far (Florence), cancelled + Dead (7/11)
+  "Zk5bpDVxbgqRgbyrL3o4", // Esteban Ortiz — 2-car garage, routed to Joseph, Dead (7/12)
+  "fKKPsWAQtt4mKZHabzj8", // Jesus Aguirre — 2-car garage, routed to Joseph, Dead (7/12)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
