@@ -66,7 +66,7 @@ const IGNORE=new Set([
   "hSgmDOCszXXjExJrCOyD", // Sheila Lewis — too far (Florence), cancelled + Dead (7/11)
   "Zk5bpDVxbgqRgbyrL3o4", // Esteban Ortiz — 2-car garage, routed to Joseph, Dead (7/12)
   "fKKPsWAQtt4mKZHabzj8", // Jesus Aguirre — 2-car garage, routed to Joseph, Dead (7/12)
-  "MPSeg3QNU0ceUIHEmFrJ", // Michael Myers — booked Tue 7/14 11am (garage floor quote)
+  "MPSeg3QNU0ceUIHEmFrJ", // Michael Myers — 3-bay north Phx, routed to Joseph (drive conflict), Dead (7/13)
   "gLu7fpwPCCRhLuakwiOj", // Dr. Jess Flores — booked Tue 7/14 9am (Casa Grande, 4-car garage)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
