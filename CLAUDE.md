@@ -143,12 +143,20 @@ have the rest of it.** Don't send another message in that thread.
   the same person, then carry on by text.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
+- **Estimate days — Tue / Thu / Sat only (hard rule).** Dan only does on-site
+  estimates (the quote look) on **Tuesdays, Thursdays, and Saturdays**. Only ever
+  propose and book quote appointments on those three days — never Mon/Wed/Fri/Sun.
+  When a lead's ready to book, offer the **next upcoming Tue, Thu, or Sat** (still
+  next-day-or-later, before 2, mornings preferred). Don't offer an off day even if
+  the customer asks for one; steer them to the nearest estimate day. (Dan may
+  override for a specific job if he says so.)
 - Quote calendar hours are **Monday–Saturday, 9 AM–2 PM** (America/Phoenix),
   hourly slots. Don't offer or try to book outside those hours — the booking will
   fail. Check free slots before promising a specific time when the day's in
   question. **Sunday is closed.** (Note: Saturday is set in the calendar hours but
   won't produce bookable slots until Dan's personal user availability includes
-  Saturday — that toggle lives in the GHL UI, not the API.)
+  Saturday — that toggle lives in the GHL UI, not the API.) Even within these
+  hours, only **Tue/Thu/Sat** are estimate days per the rule above.
 - **Mornings preferred.** Dan prefers morning times for quote appointments —
   propose a morning slot first. Only fall back to an afternoon if the customer
   can't do mornings.
