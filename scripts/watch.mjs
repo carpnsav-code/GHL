@@ -74,6 +74,7 @@ const IGNORE=new Set([
   "OS4Ob2xNAaNsIHPZ2gu0", // Joey Dial — small Mesa driveway (~320sf), routed to Joseph, Dead (7/15)
   "OR7IrrVr14SuMXfLPpsT", // Trystin Decatoire — Skool marketing-course signup, not a floor lead (7/15)
   "GLe2xuZHHPX8JSir0Iq1", // Mahdi Nashli — IG equipment/industry chatter, not a floor lead (7/15)
+  "c9q2TyPJhDxHQABKUefo", // Bob — Dan handling; rescheduled to Thu 7/16 12pm, back off (7/15)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
