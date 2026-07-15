@@ -70,6 +70,7 @@ const IGNORE=new Set([
   "gLu7fpwPCCRhLuakwiOj", // Dr. Jess Flores — booked Tue 7/14 9am (Casa Grande, 4-car garage)
   "f0ME5eihzrHw7BKE9ixf", // Jared Jasinski — Dan handling manually (went to look, ETA texts), back off (7/14)
   "QEtcq8wr4gQs1x8SxrDG", // Amy Durante — Dan took over (Rocky Point MX house build), back off (7/14)
+  "6ABawfRVbeAhGquIPMfe", // Tcgcardcentral Burton — SMS blocked (carrier "Message Blocking active"), undeliverable (7/14)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
