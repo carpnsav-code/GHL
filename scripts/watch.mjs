@@ -89,7 +89,7 @@ const [data, pipelineContacts] = await Promise.all([
 const gateOn = pipelineContacts !== null;
 if(!gateOn) console.log("!! WARNING: pipeline fetch failed — pipeline gate DISABLED this run (content filters still apply)");
 const fmt=(ms)=>new Intl.DateTimeFormat("en-US",{timeZone:"America/Phoenix",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",hour12:true}).format(new Date(ms));
-const needs=[], cold=[];
+const needs=[], cold=[], intros=[];
 for(const c of data.conversations||[]){
   if(IGNORE.has(c.contactId)) continue;                          // intentionally left
   if(gateOn && !pipelineContacts.has(c.contactId)) continue;     // only leads that have a pipeline column (not plain DMs)
@@ -110,14 +110,19 @@ for(const c of data.conversations||[]){
   if(c.lastMessageDirection!=="inbound") continue;               // I already replied
   if(/^Liked /i.test(body)||/^(Loved|Laughed at|Emphasized|Disliked|Reacted|Questioned) /i.test(body)) continue; // reactions
   if(!/[a-z0-9]/i.test(body)) continue;                          // emoji/punctuation-only (e.g. "😂") — not an inquiry
-  if(/filled out your form|would like to know more about your business/i.test(body)) continue; // raw form-fill — the auto-intro handles first contact; wait for their real reply
+  if(/filled out your form|would like to know more about your business/i.test(body)){         // brand-new lead: auto-intro is OFF now, so I send the first greeting myself
+    intros.push({name:c.fullName,phone:c.phone,contactId:c.contactId,conversationId:c.id,channel:CHAN_LABEL[c.lastMessageType],when:fmt(c.lastMessageDate)});
+    continue;
+  }
   if(c.lastMessageType==="TYPE_INSTAGRAM"){                      // IG is mostly chatter — only real leads
     const leadish=/\d|quote|floor|epoxy|polish|concrete|garage|shop|sq\s?ft|square|coat|stain|grind|seal|price|estimate|address/i.test(body);
     if(!leadish) continue;
   }
   needs.push({name:c.fullName,phone:c.phone,contactId:c.contactId,conversationId:c.id,channel:CHAN_LABEL[c.lastMessageType],when:fmt(c.lastMessageDate),body:body.replace(/\s+/g," ").slice(0,140)});
 }
-console.log("AWAITING REPLY: "+needs.length);
+console.log("NEW LEADS — send intro greeting ("+intros.length+"):");
+for(const n of intros) console.log(`• [${n.channel}] ${n.name} | ${n.phone||"-"} | ${n.contactId} | ${n.when}`);
+console.log("\nAWAITING REPLY: "+needs.length);
 for(const n of needs) console.log(`• [${n.channel}] ${n.name} | ${n.phone||"-"} | ${n.contactId} | ${n.when}\n   "${n.body}"`);
 console.log("\nCOLD (no reply to intro, 24h+ — my move now): "+cold.length);
 for(const n of cold) console.log(`• [${n.channel}] ${n.name} | ${n.phone||"-"} | ${n.contactId} | intro ${n.when}\n   "${n.body}"`);
