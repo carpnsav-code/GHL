@@ -80,6 +80,7 @@ const IGNORE=new Set([
   "YT8KztxAFQBwFxqJxhtF", // Rudy Rodriguez — small stamped pool deck reseal, routed to Joseph, Dead (7/18)
   "NYQnJIZiA13M9S3pWtfK", // Jeff Weimar — Dan handling (barndominium, Florence), back off (7/18)
   "TQ7qUYb7NsY3N13WXoaj", // Mark Johnson — Dan handling (N Phx garage, arranging Tue), back off (7/18)
+  "gIcKsgl8Qn9KkB1Mm4YE", // Ellen Cammarata — one-car carport (small), routed to Joseph, Dead (7/19)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
