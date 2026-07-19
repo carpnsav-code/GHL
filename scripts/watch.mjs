@@ -81,6 +81,7 @@ const IGNORE=new Set([
   "NYQnJIZiA13M9S3pWtfK", // Jeff Weimar — Dan handling (barndominium, Florence), back off (7/18)
   "TQ7qUYb7NsY3N13WXoaj", // Mark Johnson — Dan handling (N Phx garage, arranging Tue), back off (7/18)
   "gIcKsgl8Qn9KkB1Mm4YE", // Ellen Cammarata — one-car carport (small), routed to Joseph, Dead (7/19)
+  "67xugbZnGhcL2Rkroivm", // Kratos Customs (Randy) — Dan handling (950sf shop, calling tomorrow), back off (7/19)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
