@@ -77,6 +77,7 @@ const IGNORE=new Set([
   "c9q2TyPJhDxHQABKUefo", // Bob — Dan handling; rescheduled to Thu 7/16 12pm, back off (7/15)
   "qh35BcCbXm70woJ551M7", // Steve Rigby — 2-car garage (budget, no flake), routed to Joseph, Dead (7/18)
   "7uzNwutz28tlVQYJVhV1", // Ronnie Rivkin — Dan handling driveway thread manually, back off (7/18)
+  "YT8KztxAFQBwFxqJxhtF", // Rudy Rodriguez — small stamped pool deck reseal, routed to Joseph, Dead (7/18)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
