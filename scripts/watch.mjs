@@ -83,6 +83,7 @@ const IGNORE=new Set([
   "gIcKsgl8Qn9KkB1Mm4YE", // Ellen Cammarata — one-car carport (small), routed to Joseph, Dead (7/19)
   "67xugbZnGhcL2Rkroivm", // Kratos Customs (Randy) — Dan handling (950sf shop, calling tomorrow), back off (7/19)
   "nELclAurLhdX26s7KBA3", // Ryan Burrup — Dan handling scheduling directly (real-time job-site texts), back off (7/25)
+  "8dzUZ4bTLzfwqqYoLN4r", // Ray.n.g — booked Mon 7/27 8am (3001 E Campbell, polished concrete) (7/25)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
