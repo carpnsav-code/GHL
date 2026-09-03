@@ -85,16 +85,6 @@ const IGNORE=new Set([
   "nELclAurLhdX26s7KBA3", // Ryan Burrup — Dan handling scheduling directly (real-time job-site texts), back off (7/25)
   "8dzUZ4bTLzfwqqYoLN4r", // Ray.n.g — booked Mon 7/27 8am (3001 E Campbell, polished concrete) (7/25)
   "T8ucdniqZDRQLEDjbJC8", // Derek Haddad — small garage, already hired another contractor, Dead (7/25)
-  // Commercial Floor leads — Dan handling directly (Saturday estimates); no auto-message (8/31):
-  "jAoNZZv8I5pUI8mnGIJ3", // Steve McDonald — commercial floor
-  "umHWrbqAiYoziRnaaMNg", // Carlos Emerson Jones — commercial floor
-  "xAd889IYQJxDv23fTZlZ", // Juvenal — commercial floor
-  "AT6JW7VRGGsacFJECHNn", // Harold Williams — commercial floor
-  "PlamYG9YNhBt4OG9dK8p", // Alex Castillo — commercial floor
-  "iSdl3Ho69DSWb2OcU9XT", // Monica McKnight — commercial floor
-  "qDfWMqeBdufurCRy7FyF", // Bryan Craig — commercial floor (tattoo shop)
-  "yFnJMAwrZtq6NNPzq6ZY", // Erin McCraw — commercial floor
-  "YvUQVa7sT1mInjeHLUs4", // Mohamed Kargbo — commercial floor
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
