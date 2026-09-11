@@ -85,6 +85,7 @@ const IGNORE=new Set([
   "nELclAurLhdX26s7KBA3", // Ryan Burrup — Dan handling scheduling directly (real-time job-site texts), back off (7/25)
   "8dzUZ4bTLzfwqqYoLN4r", // Ray.n.g — booked Mon 7/27 8am (3001 E Campbell, polished concrete) (7/25)
   "T8ucdniqZDRQLEDjbJC8", // Derek Haddad — small garage, already hired another contractor, Dead (7/25)
+  "IVuUdLvHGCj3LteRzEfm", // Mari Contreras — booked Mon 9/14 12pm (Paradise Valley, polished concrete) (9/11)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
