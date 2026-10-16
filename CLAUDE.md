@@ -91,10 +91,10 @@ have the rest of it.** Don't send another message in that thread.
 - **NEVER tell the customer about the $10k minimum** or that we're picky — that's
   internal, for you only. Just qualify the job and, if it's too small, steer it the
   right way (below) without ever quoting a minimum or making them feel turned away.
-- **A 2-car garage (under 500 sq ft) is not target work — and do NOT route it to
-  Joseph (Dan, 10/16: no more work to Joseph, ever).** Don't set a Dan appointment
-  and don't hand it off to anyone. Keep it short and polite with the customer, and
-  tell Dan about the lead so he decides. When unsure if it's a 2-car garage, ask Dan.
+- **A 2-car garage (under 500 sq ft) is not target work — route it to Freddy
+  ("Epoxy Daddy"), NOT Joseph.** Don't set a Dan appointment; hand it to Freddy per
+  the Pricing section. Only 2-car garages go to Freddy — nothing else. When unsure if
+  it's a 2-car garage, ask Dan.
 
 ## Handling inbound leads (floor quotes) — set the appointment
 
@@ -248,9 +248,16 @@ have the rest of it.** Don't send another message in that thread.
   so you *can* quote one yourself: **$2,000–3,000 is a fine estimate** for a flake
   garage. Don't bring every garage to Dan; only escalate if the customer keeps
   pushing on price.
-- **NO Joseph handoffs (Dan, 10/16).** Never text Joseph Ruiz or route any lead to
-  him. For 2-car / small jobs, notify Dan and let him decide; don't move the opp to
-  Dead on your own for a handoff.
+- **NO Joseph handoffs (Dan, 10/16).** Never text Joseph Ruiz or route any lead to him.
+- **2-car garages (sub-500 sq ft) → Freddy "Epoxy Daddy" (Dan, 10/16).** ONLY 2-car
+  garages go to him; every other job stays with Dan. If you're not sure it's a 2-car
+  garage, ask Dan first. The handoff:
+  1. **Tell the customer** (Mint voice, short): the job's a bit small for us to take
+     on directly, but one of our guys will reach out to schedule a time.
+  2. **Text Freddy** (`+15627357153`, LeadConnector contactId `T7MyFtp8zjBBJwLUEbHd`)
+     with the lead's compiled info (name, phone, job + size, address if given,
+     availability) so he can reach out directly.
+  3. **Move the opportunity to Dead** once handed off.
 - Some situations are tricky — e.g. the building isn't built yet so there's
   nothing to go look at, but the customer still wants a number for budgeting. If
   we give nothing they walk, but you still can't invent a price. Escalate these
