@@ -6,7 +6,13 @@ Instagram, and Facebook and are worked through the "Mint Concrete Polishing"
 pipeline in LeadConnector. Quotes are often produced in **Jobber** (a separate
 platform).
 
-## Booking rule (hard rule — no exceptions)
+## Booking rule (hard rule)
+
+**Dan's override (10/16): for in-person estimates, create the calendar event at the
+slot you propose without waiting for the customer's yes** (still Tue/Thu/Sat, before
+2, 2+ days out, assigned to Dan, address set once known). If the customer then
+declines or can't make it, move/cancel it. The rest of this section applies to
+anything else (reschedules, same-day, non-estimate events).
 
 **Never book, schedule, reschedule, or confirm an appointment for a customer
 until that customer has explicitly said yes to a specific time.**
