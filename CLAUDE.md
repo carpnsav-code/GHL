@@ -236,6 +236,26 @@ have the rest of it.** Don't send another message in that thread.
   and then telling them we're coming, when Dan never agreed to go, is the failure
   this rule exists to prevent.)
 
+## Not ready yet → find out when, set a reminder, follow up (Dan, 10/17)
+
+When a lead says they're **not ready** (pausing the project, waiting on something,
+"after the summer," "in a couple months") — that's not a decline, don't send them to
+Dead. Instead:
+
+1. **Ask when they'd like us to check back in** (short, one line, as Hunter).
+2. **When they answer, set a reminder for yourself** for that date with the
+   `send_later` tool (a self-reminder that wakes this session). Put the contact's
+   name, contactId, what the job is, and what to say in the message so future-you
+   has everything. If they're vague ("a few months"), pick a specific date and
+   tell Dan. If they never answer, default to ~2 weeks out.
+3. **Keep them in Follow Up** (not Dead) and add a **note on the contact** with the
+   date and why.
+4. **When the reminder fires, follow up** — reach out on their thread, reference
+   where things left off, and move toward the address and an estimate time. Then
+   set the next reminder if they're still not ready.
+
+Never let a "not ready" lead fall off the radar.
+
 ## Handling declines & price objections (don't sell)
 
 - When someone declines or says the price is too high, **do not push back or try
