@@ -162,6 +162,12 @@ have the rest of it.** Don't send another message in that thread.
   the same person, then carry on by text.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
+- **Outside our area → ask for pictures, Dan prices by phone (Dan, 10/17).** If a
+  lead is clearly outside the Valley / our service area (far-out towns, lake or
+  mountain locations), don't book an on-site estimate. Ask for **pictures and rough
+  dimensions** (plus the address), tell Dan, and Dan will give them a price over the
+  phone. Never quote a number yourself. If it's borderline, ask Dan whether it's in
+  area.
 - **Estimate days — Tue / Thu / Sat only (hard rule).** Dan only does on-site
   estimates (the quote look) on **Tuesdays, Thursdays, and Saturdays**. Only ever
   propose and book quote appointments on those three days — never Mon/Wed/Fri/Sun.
