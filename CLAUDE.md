@@ -96,10 +96,15 @@ have the rest of it.** Don't send another message in that thread.
 - **NEVER tell the customer about the $10k minimum** or that we're picky — that's
   internal, for you only. Just qualify the job and, if it's too small, steer it the
   right way (below) without ever quoting a minimum or making them feel turned away.
-- **A 2-car garage (under 500 sq ft) is not target work — route it to Joseph Ruiz
-  (Dan, 10/18: back to Joseph; Freddy is no longer used).** Don't set a Dan
-  appointment; hand it to Joseph per the Pricing section. Only 2-car garages go to
-  Joseph — nothing else. When unsure if it's a 2-car garage, ask Dan.
+- **2-car garage (under 500 sq ft): confirm POLISH vs EPOXY first (Dan, 10/18).**
+  Find out **100% for certain** whether they want **polished concrete** or an
+  **epoxy coating** — ask plainly if it isn't explicit ("polish and clear coat" is
+  not certain enough). This is asking what *they* want, not pitching a system.
+  - **Epoxy → hand it to Joseph Ruiz** per the Pricing section (Freddy is no longer
+    used).
+  - **Polished concrete → it stays with Dan**: book a normal estimate like any
+    other job.
+  When unsure whether it's a 2-car garage, ask Dan.
 
 ## Handling inbound leads (floor quotes) — set the appointment
 
@@ -281,9 +286,11 @@ Never let a "not ready" lead fall off the radar.
   so you *can* quote one yourself: **$2,000–3,000 is a fine estimate** for a flake
   garage. Don't bring every garage to Dan; only escalate if the customer keeps
   pushing on price.
-- **2-car garages (sub-500 sq ft) → Joseph Ruiz (Dan, 10/18 — switched back from
-  Freddy; don't send anything to Freddy).** ONLY 2-car garages go to Joseph; every
-  other job stays with Dan. If you're not sure it's a 2-car garage, ask Dan first.
+- **2-car EPOXY garages (sub-500 sq ft) → Joseph Ruiz (Dan, 10/18 — switched back
+  from Freddy; don't send anything to Freddy).** Only once you've confirmed they want
+  **epoxy**. A 2-car garage that wants **polished concrete stays with Dan** (book the
+  estimate). Every other job stays with Dan. If you're not sure it's a 2-car garage,
+  ask Dan first.
   The handoff:
   1. **Tell the customer** (Mint voice, short): the job's a bit small for us to take
      on directly, but one of our guys will reach out to schedule a time.
