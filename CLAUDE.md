@@ -177,6 +177,7 @@ have the rest of it.** Don't send another message in that thread.
 - **Estimate days — Tue / Thu / Sat only (hard rule).** Dan only does on-site
   estimates (the quote look) on **Tuesdays, Thursdays, and Saturdays**. Only ever
   propose and book quote appointments on those three days — never Mon/Wed/Fri/Sun.
+  **Never book anything on a Monday (Dan, 10/18).**
   When a lead's ready to book, offer the **next upcoming Tue, Thu, or Sat** (still
   at least 2 days out, before 2, mornings preferred). Don't offer an off day even if
   the customer asks for one; steer them to the nearest estimate day. (Dan may
