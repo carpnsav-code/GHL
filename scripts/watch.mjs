@@ -88,6 +88,7 @@ const IGNORE=new Set([
   "IVuUdLvHGCj3LteRzEfm", // Mari Contreras — booked Mon 9/14 12pm (Paradise Valley, polished concrete) (9/11)
   "pgNj5thVqn7EnQSu7GQP", // Adam Leach — 2-car garage Maricopa, handed to Joseph, Dead (10/16)
   "JmoeZDxTTCFe4e9Hpeey", // Matt — 2-car garage ~500sf, handed to Freddy, Dead (10/16)
+  "I5Xtk3HGY7uHjud00tYR", // Caleb Koke — Dan handling, hands off (10/18)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
 const [data, pipelineContacts] = await Promise.all([
