@@ -91,8 +91,24 @@ const IGNORE=new Set([
   "I5Xtk3HGY7uHjud00tYR", // Caleb Koke — Dan handling, hands off (10/18)
 ]);
 const HOUR=3600e3, DAY=24*HOUR, now=Date.now();
+// Page back through conversations by last-message date instead of taking a fixed top-N.
+// A bulk outreach (e.g. 40+ texts) fills the most-recent slots with our own outbounds and
+// pushes real lead replies out of a fixed window — that silently hid 7 replies (10/17).
+const LOOKBACK=14*DAY;
+async function recentConversations(){
+  const all=[]; let after;
+  for(let page=0;page<25;page++){
+    const d=await ghl({locationId,sortBy:"last_message_date",sort:"desc",limit:100,startAfterDate:after});
+    const b=d.conversations||[]; all.push(...b);
+    if(b.length<100) break;
+    const last=b[b.length-1].lastMessageDate;
+    if(now-last>LOOKBACK) break;
+    after=last;
+  }
+  return {conversations:all};
+}
 const [data, pipelineContacts] = await Promise.all([
-  ghl({locationId,sortBy:"last_message_date",sort:"desc",limit:40}),
+  recentConversations(),
   pipelineContactIds(),
 ]);
 // Fail safe: if the pipeline fetch came back null (API error), don't gate on it — we'd
