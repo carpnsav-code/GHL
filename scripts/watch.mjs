@@ -87,7 +87,6 @@ const IGNORE=new Set([
   "T8ucdniqZDRQLEDjbJC8", // Derek Haddad — small garage, already hired another contractor, Dead (7/25)
   "IVuUdLvHGCj3LteRzEfm", // Mari Contreras — booked Mon 9/14 12pm (Paradise Valley, polished concrete) (9/11)
   "pgNj5thVqn7EnQSu7GQP", // Adam Leach — 2-car garage Maricopa, handed to Joseph, Dead (10/16)
-  "JmoeZDxTTCFe4e9Hpeey", // Matt — 2-car garage ~500sf, handed to Freddy, Dead (10/16)
   "I5Xtk3HGY7uHjud00tYR", // Caleb Koke — Dan handling, hands off (10/18)
   "rthlGjUatwbbVTgn6lwO", // Riksta Marie — Dan calling Tue 10/20 1:40pm (Casa Grande/Eloy new build) (10/18)
   "z0XcJJDbJLnhoICq1lmP", // Marc Walston — Dan calling Tue 10/20 2pm (10k sf shop, not poured) (10/18)
