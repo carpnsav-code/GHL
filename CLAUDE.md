@@ -179,6 +179,19 @@ have the rest of it.** Don't send another message in that thread.
   (plus the address and rough size) so he can price it, and ask what time of day
   works for the call. Flag the lead to Dan with their number and what they sent.
   Never quote a number yourself. If it's borderline, ask Dan whether it's in area.
+- **EVERY phone call goes on Dan's calendar (HARD RULE — extremely important, Dan
+  10/19).** Any time you set up, promise, or agree to a phone call with a lead
+  ("Dan will call you Tuesday at 1pm"), you **must** put it on Dan's calendar at
+  that exact time — no exceptions. Never tell a customer a call time without
+  scheduling it.
+  - How: `POST /calendars/events/block-slots` with `{locationId, assignedUserId:
+    6pvVVC5ph1zf9m5Z7IKj, startTime, endTime, title}` (20 min, **no `calendarId`** —
+    the quote calendar rejects it). Title: `CALL: <name> <phone> - <job/location>`.
+  - If the time changes, **move the block** (`PUT /calendars/events/block-slots/{id}`
+    with the new start/end) so the calendar always matches what the customer was told.
+    If the call is cancelled, remove the block.
+  - Calls follow the same no-Monday rule; don't overlap them with an estimate
+    (account for drive time).
 - **Estimate days — Tue / Thu / Sat only (hard rule).** Dan only does on-site
   estimates (the quote look) on **Tuesdays, Thursdays, and Saturdays**. Only ever
   propose and book quote appointments on those three days — never Mon/Wed/Fri/Sun.
