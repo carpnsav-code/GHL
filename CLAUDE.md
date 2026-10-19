@@ -184,12 +184,15 @@ have the rest of it.** Don't send another message in that thread.
   ("Dan will call you Tuesday at 1pm"), you **must** put it on Dan's calendar at
   that exact time — no exceptions. Never tell a customer a call time without
   scheduling it.
-  - How: `POST /calendars/events/block-slots` with `{locationId, assignedUserId:
-    6pvVVC5ph1zf9m5Z7IKj, startTime, endTime, title}` (20 min, **no `calendarId`** —
-    the quote calendar rejects it). Title: `CALL: <name> <phone> - <job/location>`.
-  - If the time changes, **move the block** (`PUT /calendars/events/block-slots/{id}`
-    with the new start/end) so the calendar always matches what the customer was told.
-    If the call is cancelled, remove the block.
+  - **Where: Dan's Google Calendar (`admin@mintconcretepolishing.com`)** — that's
+    the calendar Dan actually looks at. Create the event with the Google Calendar
+    `create_event` tool (timeZone `America/Phoenix`, 20 min, `notificationLevel: NONE`).
+    Title: `CALL: <name> <phone> - <job>`; put the job details, what the customer
+    was told, and whether they know about the call in the description. **Do NOT use
+    GHL block-slots for calls** — they don't sync to Google, so Dan never sees them
+    (that happened 10/19).
+  - If the time changes, **update the Google event** so the calendar always matches
+    what the customer was told. If the call is cancelled, delete it.
   - Calls follow the same no-Monday rule; don't overlap them with an estimate
     (account for drive time).
 - **Estimate days — Tue / Thu / Sat only (hard rule).** Dan only does on-site
