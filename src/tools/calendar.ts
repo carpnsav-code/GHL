@@ -82,11 +82,19 @@ export function registerCalendarTools(server: McpServer, client: GHLClient) {
         endTime: z.string().describe("ISO 8601 end time"),
         title: z.string().optional(),
         appointmentStatus: z.enum(["confirmed", "new", "cancelled"]).default("confirmed"),
+        assignedUserId: z
+          .string()
+          .optional()
+          .describe("GHL user the appointment is assigned to; defaults to Dan (GHL_APPOINTMENT_USER_ID)"),
       },
     },
     async (input) => {
+      // The quote calendar is round-robin, so without an explicit assignee it can
+      // land on the wrong user. Default every booking to Dan so it shows on his calendar.
+      const assignedUserId =
+        input.assignedUserId || process.env.GHL_APPOINTMENT_USER_ID || "6pvVVC5ph1zf9m5Z7IKj";
       const data = await client.request("POST", "/calendars/events/appointments", {
-        body: { locationId: client.locationId, ...input },
+        body: { locationId: client.locationId, ...input, assignedUserId },
       });
       return jsonResult(data);
     },
@@ -103,11 +111,20 @@ export function registerCalendarTools(server: McpServer, client: GHLClient) {
         endTime: z.string().optional(),
         title: z.string().optional(),
         appointmentStatus: z.enum(["confirmed", "new", "cancelled", "showed", "noshow"]).optional(),
+        assignedUserId: z
+          .string()
+          .optional()
+          .describe("GHL user the appointment stays assigned to; defaults to Dan (GHL_APPOINTMENT_USER_ID)"),
       },
     },
     async ({ appointmentId, ...fields }) => {
+      // The quote calendar is round-robin: a time change without an explicit assignee
+      // re-rolls it onto the wrong user and it vanishes from Dan's calendar. Always
+      // re-send the assignee (default Dan) so it stays put.
+      const assignedUserId =
+        fields.assignedUserId || process.env.GHL_APPOINTMENT_USER_ID || "6pvVVC5ph1zf9m5Z7IKj";
       const data = await client.request("PUT", `/calendars/events/appointments/${appointmentId}`, {
-        body: fields,
+        body: { ...fields, assignedUserId },
       });
       return jsonResult(data);
     },

@@ -6,6 +6,7 @@ import { registerContactTools } from "./tools/contacts.js";
 import { registerOpportunityTools } from "./tools/opportunities.js";
 import { registerCalendarTools } from "./tools/calendar.js";
 import { registerConversationTools } from "./tools/conversations.js";
+import { registerEstimateTools } from "./tools/estimates.js";
 
 async function main() {
   const client = new GHLClient();
@@ -19,6 +20,7 @@ async function main() {
   registerOpportunityTools(server, client);
   registerCalendarTools(server, client);
   registerConversationTools(server, client);
+  registerEstimateTools(server, client);
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
