@@ -172,6 +172,15 @@ have the rest of it.** Don't send another message in that thread.
   the same person, then carry on by text.
 - Hard booking rule still applies: only create the calendar event after they say
   yes to a specific time.
+- **CHECK THE ADDRESS BEFORE YOU BOOK (HARD RULE, Dan 10/20).** Dan is based in
+  **Gilbert (6583 S San Jacinto St, 85298)**. Before you book or offer any on-site
+  estimate, look at where the address actually is and how far a drive it is from
+  Gilbert. **Anything roughly 45+ minutes away (e.g. Apache Lake, Payson, Tucson,
+  Casa Grande/Eloy, Maricopa, far West Valley, out of state) is out of area — do NOT
+  book an on-site estimate;** use the phone-quote flow below instead. If you can't
+  tell where an address is or it's borderline, **ask Dan before booking**. Never
+  book an estimate with only a vague location ("Apache Lake") — that's how a 2-hour
+  drive got booked on 10/16.
 - **Outside our area → phone quote the NEXT DAY, with pictures (Dan, 10/17).** If a
   lead is clearly outside the Valley / our service area (Tucson, Payson, lake or
   mountain locations), don't book an on-site estimate. Tell them **Dan will call them
